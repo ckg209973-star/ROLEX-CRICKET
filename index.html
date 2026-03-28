@@ -1,214 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rolex Cricket</title>
 
-    <!-- Meta Pixel Code -->
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }
-        (window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1183539050152137');
-        fbq('track', 'PageView');
-    </script>
+<!-- Facebook Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-    <noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1183539050152137&ev=PageView&noscript=1"/>
-</noscript>
-    <!-- End Meta Pixel Code -->
+fbq('init', '1178248227782845');
+fbq('track', 'PageView');
+</script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garud Fixer (Baazigar)</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
 
-    <!-- Preload background for faster render -->
-    <link rel="preload" as="image" href="https://applescoop.org/image/wallpapers/iphone/iphone-dark-black-and-blue-abstract-impede-depth-effect-with-think-lines-apple-iphone-21-09-2025-1758398684-hd-wallpaper.webp">
+.card {
+    width: 90%;
+    max-width: 380px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-        }
+.top {
+    background: #0f6b5c;
+    height: 90px;
+}
 
-        body {
-            background: #0c0f1a url("https://applescoop.org/image/wallpapers/iphone/iphone-dark-black-and-blue-abstract-impede-depth-effect-with-think-lines-apple-iphone-21-09-2025-1758398684-hd-wallpaper.webp") center/cover no-repeat fixed;
-            color: #fff;
-            min-height: 100vh;
-        }
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
 
-        .overlay {
-            background: rgba(10, 12, 22, .82);
-            min-height: 100vh;
-        }
+/* Telugu text */
+.subname {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
 
-        .container {
-            max-width: 420px;
-            margin: auto;
-            padding: 20px 15px 90px;
-        }
+.verified {
+    color: green;
+}
 
-        /* Profile */
+.members {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
 
-        .profile-box {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+.notice {
+    background: #fff8e5;
+    border: 1px solid #f5d98f;
+    margin: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+}
 
-        .profile-box img {
-            width: 95px;
-            height: 95px;
-            border-radius: 50%;
-            border: 2px solid #ffffff55;
-        }
+.notice b {
+    color: red;
+}
 
-        .profile-box h1 {
-            margin-top: 10px;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
+/* Glow + Zoom Button */
+.btn {
+    display: block;
+    margin: 20px;
+    padding: 15px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transform: scale(0.9);
+    box-shadow: 0 0 10px #22c55e, 0 0 20px #22c55e;
+    animation: glow 1.5s infinite alternate;
+    transition: 0.3s;
+}
 
-        /* Card */
+.btn:hover {
+    transform: scale(1);
+}
 
-        .card {
-            background: #ffffff12;
-            border: 1px solid #ffffff20;
-            border-radius: 12px;
-            padding: 16px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #22c55e, 0 0 20px #22c55e;
+    }
+    to {
+        box-shadow: 0 0 20px #22c55e, 0 0 40px #22c55e;
+    }
+}
 
-        /* Button */
+.footer {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 15px;
+}
+</style>
 
-        .btn {
-            display: block;
-            margin-top: 14px;
-            padding: 14px;
-            border-radius: 30px;
-            background: #1fa2ff;
-            color: #fff;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        /* Features */
-
-        .features {
-            list-style: none;
-            margin-top: 8px;
-        }
-
-        .features li {
-            font-size: .95rem;
-            margin: 6px 0;
-        }
-
-        .features li::before {
-            content: "✓ ";
-            color: #4caf50;
-        }
-
-        /* Footer */
-
-        .footer {
-            text-align: center;
-            font-size: .85rem;
-            opacity: .85;
-        }
-
-        .footer a {
-            color: #6bd4ff;
-            text-decoration: none;
-        }
-
-        /* Bottom CTA */
-
-        .bottom-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: #000000cc;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .bottom-bar a {
-            display: inline-block;
-            width: 90%;
-            max-width: 320px;
-            padding: 14px;
-            border-radius: 30px;
-            background: #12d8fa;
-            color: #000;
-            font-weight: 700;
-            text-decoration: none;
-        }
-    </style>
 </head>
-
 <body>
-    <div class="overlay">
 
-        <div class="container">
+<div class="card">
 
-            <div class="profile-box">
-                <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/6952a267b21b7_40bb2f3d-25fd-484d-9b63-a8468a701820.jfif" alt="Garud Fixer">
-                <h1>Garud Fixer (Baazigar)</h1>
-            </div>
+    <div class="top"></div>
 
-            <div class="card">
-                <h2>Cricket Match Predictions</h2>
-                <p style="opacity:.9;">Well researched match insights & analysis</p>
-                <a href="https://t.me/+9WnufKITJK9lM2I1" class="btn">Join Free Telegram Channel</a>
-            </div>
-
-            <div class="card">
-                <h2>What You Get</h2>
-                <ul class="features">
-                    <li>Match & Toss Analysis</li>
-                    <li>Team Performance Insights</li>
-                    <li>Daily Free Updates</li>
-                    <li>Simple & Clean Info</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <p style="opacity:.9;">
-                    Trusted by thousands of cricket lovers across India.
-                </p>
-            </div>
-
-            <div class="footer">
-                Marketing by :
-                <a href="https://t.me/+lpl9wSvnR3YyZjA1">QB Agency™</a>
-            </div>
-
-        </div>
-
-        <div class="bottom-bar">
-            <a href="https://t.me/+9WnufKITJK9lM2I1">अभी टेलीग्राम जॉइन करें</a>
-        </div>
-
+    <div class="name">
+        Rolex Cricket <span class="verified">✔️</span>
     </div>
-</body>
 
+    <!-- Telugu Name -->
+    <div class="subname">
+        రోలెక్స్ క్రికెట్
+    </div>
+
+    <div class="members">
+        150,000+ Members • Online
+    </div>
+
+    <div class="notice">
+        📢 <b>Notice:</b> Aaj ka match report aa gaya hai.<br>
+        <b>100% Winning Guaranteed.</b><br>
+        Join karke check karein. Entry Free hai.
+    </div>
+
+    <a href="https://t.me/+srIMGS80rP8xMjZl" class="btn"
+       onclick="fbq('track', 'Lead');">
+        ✔ JOIN CHANNEL NOW
+    </a>
+
+    <div class="footer">
+        ✔ Secure • 🚫 No Spam • 🔒 Private
+    </div>
+
+</div>
+
+</body>
 </html>
